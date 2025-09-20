@@ -1,0 +1,142 @@
+body{
+    background-color: #222;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    max-width: 350px;
+    margin: 100px auto 0;
+    color: white;
+    background:linear-gradient(135deg,#4F39F6,#2A9689,#62748E);
+    padding: 40px 35px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.container h1{
+    text-decoration: underline;
+}
+
+.search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-left: -50px;
+}
+
+.search input{
+    border: none;
+    outline: none;
+    height: 60px;
+    flex: 1;
+    margin: 0 45px;
+    padding: 0 10px;
+    border-radius: 45px;
+    background-color: #ebfffc;
+    font-size: 18px;
+}
+
+.search button{
+    border: none;
+    outline: none;
+    height: 60px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ebfffc;
+    cursor: pointer;
+    color: grey;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.2s;
+}
+
+.search button:hover{
+    background-color: #E4E4E7;
+}
+
+.list-container{
+    margin-top: 30px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;    
+}
+
+#list-container{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#list-container li{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 15px 60px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 8px 0;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+#list-container li:hover{
+    transform: translate3D(0,-1px,0) scale(1.03);
+    transition: all 0.3s ease;
+}
+
+#list-container button{
+    border: none;
+    border-radius: 5px;
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #ebfffc;
+    font-weight: 700;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    flex-shrink: 0;
+    margin-left: 10px;
+    
+}
+
+#list-container button:hover{
+    background-color: #E4E4E7;
+}
+
+
+/* Strike-through only the task text span */
+.task-text.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+#list-container li.completed button {
+    text-decoration: none;
+    color: gray;
+}
+
+.task-checkbox {
+    position: absolute;          
+    left: 15px;
+    top: 50%;                     
+    transform: translateY(-50%);  
+    cursor: pointer;
+    width: 24px;                  
+    height: 24px;                 
+}
+
+
+
+
+
